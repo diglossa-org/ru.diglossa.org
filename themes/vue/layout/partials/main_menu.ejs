@@ -1,0 +1,7 @@
+<li><a href="<%- url_for("/about") %>" class="nav-link<%- page.path.match(/about$/) ? ' current' : '' %>">Морфей</a></li>
+<li><a href="<%- url_for("/philosophy/") %>" class="nav-link<%- page.path.match(/philosophy/) ? ' current' : '' %>">Философия</a></li>
+<li><a href="<%- url_for("/chinese/") %>" class="nav-link<%- page.path.match(/chinese/) ? ' current' : '' %>">Китайский</a></li>
+<li><a href="<%- url_for("/greek/") %>" class="nav-link<%- page.path.match(/greek/) ? ' current' : '' %>">Греческий</a></li>
+<li><a href="<%- url_for("/sanskrit/") %>" class="nav-link<%- page.path.match(/sanskrit/) ? ' current' : '' %>">Санскрит</a></li>
+<%- partial('partials/section_dropdown') %>
+<%- partial('partials/language_dropdown') %>
